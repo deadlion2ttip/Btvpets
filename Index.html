@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="index.css" rel="stylesheet" type='text/css'>
+    <title>Burlington's Pet Source</title>
+</head>
+<body>
+    <div id='container'>
+        <header>
+            <img id='logo' src='petslogo.bmp.png' alt='Burlington Pets logo'>
+            <div id='searchForm'>
+                <input id='productSearch' type="search" placeholder="Search for pets or products!">
+                <button id='search'>Search</button>
+            </div>
+            <img src='shopping_cart_PNG37.png' id='shoppingCart' alt='check your shopping cart'>
+        </header>
+        <nav>
+            <div class='dropDown'>
+                <div class='navItem'>Animals</div>
+                <div class='hiddenMenu'>
+                    <a href=# class='dropDownItem'>Reptile</a>
+                    <a href=# class='dropDownItem'>bird</a>
+                    <a href=# class='dropDownItem'>cat</a>
+                    <a href=# class='dropDownItem'>dog</a>
+                </div>
+            </div>
+            <div class='dropDown'>
+                <div class='navItem'>Food & Treats</div>
+                <div class='hiddenMenu'></div>
+            </div>
+            <div class='dropDown'>
+                <div class='navItem'>Habitats & Transports</div>
+                <div class='hiddenMenu'></div>
+            </div>
+            <div class='dropDown'>
+                <div class='navItem'>Accessories</div>
+                <div class='hiddenMenu'></div>
+            </div>
+        </nav>
+        <div id='aboveFoldContainer'>
+            <img id="promotion" alt="promotional banner" src='promotion1.jpg'>
+        </div>
+    </div>
+<script>
+    function dropDown() {
+        let dropDowns = document.getElementsByClassName('dropDown')
+            for (let dropDown of dropDowns) {
+                dropDown.addEventListener('mouseover', function() {dropMenu(dropDown)})
+                dropDown.addEventListener('mouseout', function() {hideMenu(dropDown)})
+            }
+    }
+
+    function dropMenu(dropDown) {
+        let menuList = dropDown.getElementsByClassName('hiddenMenu');
+        let menu = menuList[0]
+        menu.style = 'display: flex';
+    }
+    function hideMenu(dropDown){
+        let menuList = dropDown.getElementsByClassName('hiddenMenu');
+        let menu = menuList[0]
+        menu.style = 'display: none'
+    }
+    dropDown()
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    margin:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo {
+    height: 1%;
+}
+#searchForm {
+    align-self: center;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#productSearch {
+    width: 80%;
+    height: 50px;
+    border: 2px solid black;
+}
+
+#search {
+    border: none;
+    background: rgb(44, 209, 78);
+    height:50px;
+}
+
+#shoppingCart {
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(253, 130, 55);
+    height: 2.3em; 
+}
+
+.navItem {
+    color:white;
+    font-size: 2em;
+    padding:0px  10px;
+}
+.navItem:hover{
+    background-color: rgba(195, 104, 47, 0.986);
+}
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hiddenMenu {
+    z-index: 1;
+    font-size: 1.5em;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.dropDownItem {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 2px 5px;
+    background-color: rgb(253, 130, 55)
+}
+.dropDownItem:hover {
+    background-color: rgba(195, 104, 47, 0.986);
+}
+#aboveFoldContainer {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#promotion {
+    width: 80%;
+    height: 400px;
+    margin: 30px;
+}
