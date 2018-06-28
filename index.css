@@ -97,4 +97,19 @@ h2 {
     border-bottom: 1px solid black;
     width: 100%;
     Height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.product {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+}
+.productImg {
+    margin-right: 10px;
+    align-self: center;
+    height:175px;
+    width:175px;
 }
