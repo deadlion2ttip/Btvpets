@@ -136,6 +136,7 @@ p {
     font-size: 16pt;
 }
 #contactSection {
+    width: 100%;
     display: flex;
     justify-content:space-around;
 }
