@@ -135,3 +135,18 @@ h2 {
 p {
     font-size: 16pt;
 }
+#contactSection {
+    display: flex;
+    justify-content:space-around;
+}
+footer{
+    font-size: 12pt;
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(253, 130, 55);
+}
+.footerLink {
+    margin: 0px 20px;
+}
